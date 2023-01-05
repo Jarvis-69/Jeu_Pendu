@@ -25,7 +25,7 @@ namespace Hangman
             guessedLetters = new List<char>();
 
             // Affichez les instructions au joueur
-            WriteLine("Bienvenue dans le jeu du pendu! Vous devez deviner le mot caché en devinant une lettre à la fois.");
+            WriteLine("Bienvenue dans le jeu du pendu! Vous devez deviner le mot caché en devinant une lettre à la fois. Les mots sont composés uniquement de minuscules, et ne possèdent pas d'accents");
             WriteLine("Le mot à deviner contient {0} lettres.", wordToGuess.Length);
             WriteLine("Vous avez {0} tentatives pour deviner le mot.", remainingGuesses);
         }

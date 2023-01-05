@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joris\\Desktop\\Jeu\\Jeu.csproj": {}
+    "C:\\Users\\joris\\Desktop\\Jeu\\Jeu_Pendu\\Jeu.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joris\\Desktop\\Jeu\\Jeu.csproj": {
+    "C:\\Users\\joris\\Desktop\\Jeu\\Jeu_Pendu\\Jeu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joris\\Desktop\\Jeu\\Jeu.csproj",
+        "projectUniqueName": "C:\\Users\\joris\\Desktop\\Jeu\\Jeu_Pendu\\Jeu.csproj",
         "projectName": "Jeu",
-        "projectPath": "C:\\Users\\joris\\Desktop\\Jeu\\Jeu.csproj",
+        "projectPath": "C:\\Users\\joris\\Desktop\\Jeu\\Jeu_Pendu\\Jeu.csproj",
         "packagesPath": "C:\\Users\\joris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joris\\Desktop\\Jeu\\obj\\",
+        "outputPath": "C:\\Users\\joris\\Desktop\\Jeu\\Jeu_Pendu\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joris\\AppData\\Roaming\\NuGet\\NuGet.Config"
