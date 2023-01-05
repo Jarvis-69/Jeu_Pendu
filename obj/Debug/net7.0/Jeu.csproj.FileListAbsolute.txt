@@ -1,0 +1,15 @@
+C:\Users\joris\Desktop\Jeu\bin\Debug\net7.0\Jeu.exe
+C:\Users\joris\Desktop\Jeu\bin\Debug\net7.0\Jeu.deps.json
+C:\Users\joris\Desktop\Jeu\bin\Debug\net7.0\Jeu.runtimeconfig.json
+C:\Users\joris\Desktop\Jeu\bin\Debug\net7.0\Jeu.dll
+C:\Users\joris\Desktop\Jeu\bin\Debug\net7.0\Jeu.pdb
+C:\Users\joris\Desktop\Jeu\obj\Debug\net7.0\Jeu.csproj.AssemblyReference.cache
+C:\Users\joris\Desktop\Jeu\obj\Debug\net7.0\Jeu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joris\Desktop\Jeu\obj\Debug\net7.0\Jeu.AssemblyInfoInputs.cache
+C:\Users\joris\Desktop\Jeu\obj\Debug\net7.0\Jeu.AssemblyInfo.cs
+C:\Users\joris\Desktop\Jeu\obj\Debug\net7.0\Jeu.csproj.CoreCompileInputs.cache
+C:\Users\joris\Desktop\Jeu\obj\Debug\net7.0\Jeu.dll
+C:\Users\joris\Desktop\Jeu\obj\Debug\net7.0\refint\Jeu.dll
+C:\Users\joris\Desktop\Jeu\obj\Debug\net7.0\Jeu.pdb
+C:\Users\joris\Desktop\Jeu\obj\Debug\net7.0\Jeu.genruntimeconfig.cache
+C:\Users\joris\Desktop\Jeu\obj\Debug\net7.0\ref\Jeu.dll
