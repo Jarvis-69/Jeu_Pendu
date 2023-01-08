@@ -4,7 +4,67 @@ namespace Hangman
 {
     class Game
     {
-
+        // public string[] Renders =
+        // {
+        //     #region Frames
+        //     // 0
+        //     @"      ╔═══╗   " + '\n' +
+        //     @"      |   ║   " + '\n' +
+        //     @"          ║   " + '\n' +
+        //     @"          ║   " + '\n' +
+        //     @"          ║   " + '\n' +
+        //     @"     ███  ║   " + '\n' +
+        //     @"    ══════╩═══",
+        //     // 1
+        //     @"      ╔═══╗   " + '\n' +
+        //     @"      |   ║   " + '\n' +
+        //     @"      O   ║   " + '\n' +
+        //     @"          ║   " + '\n' +
+        //     @"          ║   " + '\n' +
+        //     @"     ███  ║   " + '\n' +
+        //     @"    ══════╩═══",
+        //     // 2
+        //     @"      ╔═══╗   " + '\n' +
+        //     @"      |   ║   " + '\n' +
+        //     @"      O   ║   " + '\n' +
+        //     @"      |   ║   " + '\n' +
+        //     @"          ║   " + '\n' +
+        //     @"     ███  ║   " + '\n' +
+        //     @"    ══════╩═══",
+        //     // 3
+        //     @"      ╔═══╗   " + '\n' +
+        //     @"      |   ║   " + '\n' +
+        //     @"      O   ║   " + '\n' +
+        //     @"      |\  ║   " + '\n' +
+        //     @"          ║   " + '\n' +
+        //     @"     ███  ║   " + '\n' +
+        //     @"    ══════╩═══",
+        //     // 4
+        //     @"      ╔═══╗   " + '\n' +
+        //     @"      |   ║   " + '\n' +
+        //     @"      O   ║   " + '\n' +
+        //     @"     /|\  ║   " + '\n' +
+        //     @"          ║   " + '\n' +
+        //     @"     ███  ║   " + '\n' +
+        //     @"    ══════╩═══",
+        //     // 5
+        //     @"      ╔═══╗   " + '\n' +
+        //     @"      |   ║   " + '\n' +
+        //     @"      O   ║   " + '\n' +
+        //     @"     /|\  ║   " + '\n' +
+        //     @"       \  ║   " + '\n' +
+        //     @"     ███  ║   " + '\n' +
+        //     @"    ══════╩═══",
+        //     // 6
+        //     @"      ╔═══╗   " + '\n' +
+        //     @"      |   ║   " + '\n' +
+        //     @"      O   ║   " + '\n' +
+        //     @"     /|\  ║   " + '\n' +
+        //     @"     / \  ║   " + '\n' +
+        //     @"     ███  ║   " + '\n' +
+        //     @"    ══════╩═══",
+        //     #endregion
+        // };
         public string[] DeathAnimation =
         {
             #region Frames
@@ -356,11 +416,10 @@ namespace Hangman
             }
             else
             {
-                // Sinon, décrémentez le nombre de tentatives restantes
-                remainingGuesses--;
-                WriteLine("La lettre {0} ne se trouve pas dans le mot.", letter);
-                WriteLine("Il vous reste {0} tentatives.", remainingGuesses);
-
+            // Sinon, décrémentez le nombre de tentatives restantes
+            remainingGuesses--;
+            WriteLine("La lettre {0} ne se trouve pas dans le mot.", letter);
+            WriteLine("Il vous reste {0} tentatives.", remainingGuesses);
             }
 
             // Vérifiez si le joueur a gagné ou perdu
@@ -418,8 +477,12 @@ namespace Hangman
 
         public bool HasLost()
         {
-        // Vérifiez si le nombre de tentatives restantes est égal à 0
-        return remainingGuesses == 0;
+            // for (int i = 0; i < Renders.Length; i++)
+            // {
+            //     WriteLine(Renders[i]);
+            // }
+            // Vérifiez si le nombre de tentatives restantes est égal à 0
+            return remainingGuesses == 0;
         }
     }
 
@@ -433,6 +496,7 @@ namespace Hangman
 
             while (game.IsRunning())
             {
+                // Demande une lettre à l'utilisateur
                 WriteLine("Entrez une lettre:");
                 string? input = ReadLine();
 
@@ -441,12 +505,15 @@ namespace Hangman
                 {
                     continue;
                 }
-
+                // Récupération de la première lettre de l'entrée de l'utilisateur
                 char letter = input[0];
+                // Envoi de la lettre à l'objet Game pour qu'il vérifie si elle est correcte
                 game.TakeGuess(letter);
+                // Affichage du progrès de la partie à l'utilisateur
                 game.ShowGuessProgress();
             }
 
+            // Vérification de la victoire ou de la défaite de l'utilisateur
             if (game.HasWon())
             {
                 WriteLine("Vous avez gagné!");
@@ -454,6 +521,7 @@ namespace Hangman
             else
             {
                 WriteLine("Vous avez perdu.");
+                // Affichage de l'animation de défaite avec un délai de 150 millisecondes entre chaque élément
                 for (int i = 0; i < game.DeathAnimation.Length; i++)
                 {
                     WriteLine(game.DeathAnimation[i]);
